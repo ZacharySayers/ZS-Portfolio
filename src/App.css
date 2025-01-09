@@ -2,7 +2,8 @@
   --background-color: #0b0c10;
   --btn-color: #fff;
   --btn-text-color: #222;
-  --project-card-bg: #fff;
+  --project-card-bg: transparent;
+  --volunteer-card-bg: transparent;
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
@@ -49,11 +50,17 @@ h3 {
 h1 {
   font-family: "Rubik", sans-serif;
   font-size: 32px;
+  padding-top: 60px;
 }
 
 p {
   font-size: 16px;
   font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
 }
 
 .sectionTitle {
@@ -71,6 +78,7 @@ p {
   }
   h1 {
     font-size: 40px;
+    padding-top: 60px; /*Added so Navbar doesnt cover the titles*/
   }
   h2,
   h3 {

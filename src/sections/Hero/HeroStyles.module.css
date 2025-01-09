@@ -77,6 +77,18 @@ button:active {
   gap: 20px;
 }
 
+.leftImage {
+  left: 0;
+}
+
+.rightImage {
+  right: 0;
+}
+
+#root > :nth-child(1) + :nth-child(2) {
+  margin-bottom: 0; /* Reset gap between NavBar and Hero */
+}
+
 @media (width >= 800px) {
   .container {
     flex-direction: row-reverse;
@@ -88,6 +100,11 @@ button:active {
       width: 350px;
     }
   }
+
+  .leftImage,
+  .rightImage {
+    width: 100px;
+  }
 }
 
 @media (width >= 1400px) {
@@ -96,5 +113,9 @@ button:active {
       max-width: 400px;
       width: 400px;
     }
+  }
+  .leftImage,
+  .rightImage {
+    width: 200px;
   }
 }
